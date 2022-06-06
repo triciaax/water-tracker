@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+body,
+html {
+  background-color: #e0dfdd;
+  margin: 0px;
+}
+
+/* Create two equal columns */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0px 100px;
+}
+
+/* Create two equal columns */
+.column2 {
+  flex: 50%;
+  padding: 5px;
+}
+
+/* On screens that are 992px wide or less, go from four columns to two columns */
+@media screen and (max-width: 992px) {
+    .column2 {
+        flex: 100%;
+    }
+    }
+    
+    /* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+    .row {
+      flex-direction: column;
+    }
+    }
+
+.input {
+    background-color: aqua;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.image-container {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    background-color: bisque;
+}
